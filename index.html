@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Natarajan Muthu - Lead Full Stack Application Developer, GenAI Solution Architect, Network Engineer, SRE, DevOps and Cloud Architect based in West London.">
-    <meta name="theme-color" content="#0f172a">
-    <meta property="og:title" content="Natarajan Muthu">
-    <meta property="og:description" content="Senior technical leader building GenAI platforms, cloud-native applications, network automation, and enterprise infrastructure.">
+    <meta name="description" content="Natarajan Muthu - AI-focused Forward Deployed Engineer, GenAI Solution Architect and full-stack platform builder in London.">
+    <meta name="theme-color" content="#101114">
+    <meta property="og:title" content="Natarajan Muthu | AI Forward Deployed Engineer">
+    <meta property="og:description" content="Agentic AI, GenAI platforms, RAG systems, automation and enterprise AI delivery.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/17359328?v=4">
-    <title>Natarajan Muthu | GenAI Solution Architect</title>
+    <title>Natarajan Muthu | AI Forward Deployed Engineer</title>
     <link rel="preconnect" href="https://avatars.githubusercontent.com">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
@@ -18,7 +18,7 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Natarajan Muthu",
-        "jobTitle": "Lead Full Stack Application Developer / GenAI Solution Architect",
+        "jobTitle": "Forward Deployed Engineer / GenAI Solution Architect",
         "email": "mailto:natarajan28311782@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -44,6 +44,7 @@
     </script>
   </head>
   <body>
+    <canvas class="neural-canvas" id="neuralCanvas" aria-hidden="true"></canvas>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Natarajan Muthu home">
         <span class="brand-mark">NM</span>
@@ -61,11 +62,12 @@
     <main id="top">
       <section class="hero section-band">
         <div class="hero-copy">
-          <p class="eyebrow">West London - GenAI, cloud, networks, platforms</p>
-          <h1>Lead Full Stack Application Developer and GenAI Solution Architect.</h1>
+          <div class="status-pill"><span class="pulse-dot"></span> Joining Kore.ai as Forward Deployed Engineer</div>
+          <p class="eyebrow">Enterprise AI delivery - agents - RAG - production platforms</p>
+          <h1>Forward deployed AI engineer who turns messy enterprise problems into shipped GenAI systems.</h1>
           <p class="hero-summary">
-            I build production-ready AI platforms, cloud-native applications, network automation systems, and
-            enterprise infrastructure with end-to-end ownership from architecture to operations.
+            I design, code, deploy and operate AI-native products across customer environments: agentic workflows,
+            retrieval systems, full-stack apps, network automation and cloud platforms built for real production use.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="mailto:natarajan28311782@gmail.com">Email me</a>
@@ -73,7 +75,7 @@
           </div>
           <dl class="signal-grid" aria-label="Career highlights">
             <div>
-              <dt>15+</dt>
+              <dt data-counter="15">15+</dt>
               <dd>years across software, cloud, SRE, DevOps and network engineering</dd>
             </div>
             <div>
@@ -81,16 +83,32 @@
               <dd>Global GCP Agentic AI Hackathon among 3,000+ participants</dd>
             </div>
             <div>
-              <dt>GBP 2M</dt>
+              <dt data-counter="2">GBP 2M</dt>
               <dd>annual savings delivered through AI-led RAN design auditing</dd>
             </div>
           </dl>
         </div>
-        <aside class="profile-panel" aria-label="Profile summary">
-          <img src="https://avatars.githubusercontent.com/u/17359328?v=4" alt="Natarajan Muthu" width="180" height="180">
-          <div>
-            <h2>Natarajan Muthu</h2>
-            <p>Principal Consultant at Wipro, building GenAI and automation platforms for Virgin Media O2.</p>
+        <aside class="profile-panel terminal-shell" aria-label="Animated engineering console">
+          <div class="terminal-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>agentic-delivery.sh</strong>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> boot --profile natarajan --mode forward-deployed-ai</p>
+            <p><span class="prompt">></span> target: enterprise AI adoption, shipped in production</p>
+            <p><span class="prompt">></span> stack: Kore.ai, GenAI, RAG, agents, FastAPI, Next.js, GCP, AWS</p>
+            <p><span class="prompt">></span> proof: 20-50 days audit cycle reduced to under 3 minutes</p>
+            <p><span class="prompt">></span> recognition: #1 global GCP Agentic AI Hackathon</p>
+            <p class="typing-line"><span class="prompt">$</span> <span id="typingText"></span><span class="cursor"></span></p>
+          </div>
+          <div class="terminal-profile">
+            <img src="https://avatars.githubusercontent.com/u/17359328?v=4" alt="Natarajan Muthu" width="88" height="88">
+            <div>
+              <h2>Natarajan Muthu</h2>
+              <p>AI solution architect, soon joining Kore.ai as Forward Deployed Engineer.</p>
+            </div>
           </div>
           <div class="contact-stack">
             <a href="mailto:natarajan28311782@gmail.com">natarajan28311782@gmail.com</a>
@@ -100,10 +118,37 @@
         </aside>
       </section>
 
+      <section class="logo-band" aria-label="Company and platform experience">
+        <div class="logo-track">
+          <span>Kore.ai</span>
+          <span>Wipro</span>
+          <span>Virgin Media O2</span>
+          <span>AWS</span>
+          <span>Oracle Cloud</span>
+          <span>Bank of America</span>
+          <span>Fujitsu</span>
+          <span>Optum</span>
+          <span>HCLTech</span>
+          <span>Google Cloud</span>
+          <span>Topcoder</span>
+          <span>Kore.ai</span>
+          <span>Wipro</span>
+          <span>Virgin Media O2</span>
+          <span>AWS</span>
+          <span>Oracle Cloud</span>
+          <span>Bank of America</span>
+          <span>Fujitsu</span>
+          <span>Optum</span>
+          <span>HCLTech</span>
+          <span>Google Cloud</span>
+          <span>Topcoder</span>
+        </div>
+      </section>
+
       <section class="section-band compact" id="impact">
         <div class="section-heading">
-          <p class="eyebrow">Proof of impact</p>
-          <h2>Recognized for shipping hard systems under real enterprise constraints.</h2>
+          <p class="eyebrow">AI proof of impact</p>
+          <h2>Recognized for shipping agentic AI and automation systems under real enterprise constraints.</h2>
         </div>
         <div class="award-grid">
           <article>
@@ -143,8 +188,8 @@
 
       <section class="section-band" id="projects">
         <div class="section-heading">
-          <p class="eyebrow">Selected technical leadership</p>
-          <h2>Platforms where AI, automation, cloud, and network operations meet.</h2>
+          <p class="eyebrow">Selected AI systems</p>
+          <h2>Agentic platforms, RAG apps, autonomous QA and infrastructure intelligence.</h2>
         </div>
         <div class="project-grid">
           <article class="project-card featured">
@@ -190,10 +235,20 @@
 
       <section class="section-band compact" id="experience">
         <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>Senior roles across telecom, hyperscale cloud, banking, healthcare, and enterprise infrastructure.</h2>
+          <p class="eyebrow">Trajectory</p>
+          <h2>From network depth to AI product ownership: the blend forward deployed AI teams need.</h2>
         </div>
         <div class="timeline">
+          <article class="future-role">
+            <div class="time">Next</div>
+            <div>
+              <h3>Forward Deployed Engineer - Kore.ai</h3>
+              <p>
+                Joining to focus on enterprise AI delivery: solution architecture, customer discovery, integrations,
+                conversational AI, agentic automation, and production adoption.
+              </p>
+            </div>
+          </article>
           <article>
             <div class="time">04/2023 - Current</div>
             <div>

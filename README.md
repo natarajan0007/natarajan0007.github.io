@@ -1,6 +1,6 @@
-# Natarajan Muthu Resume Website
+# Natarajan Muthu AI Portfolio Website
 
-This is a static resume website ready for GitHub Pages.
+This is a static AI-focused portfolio website ready for GitHub Pages.
 
 ## Free Hosting Recommendation
 
@@ -27,7 +27,8 @@ https://natarajan0007.github.io
 
 ## Files
 
-- `index.html` - the resume website.
+- `index.html` - the AI portfolio website.
 - `styles.css` - responsive styling.
-- `script.js` - small interactions for copy email and active navigation.
+- `script.js` - terminal typing, canvas animation, counters, copy email and active navigation.
+
 The source PDF is intentionally not committed because it contains private contact details.
