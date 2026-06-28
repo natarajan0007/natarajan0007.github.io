@@ -871,3 +871,263 @@ body::after {
     transform: none;
   }
 }
+
+.three-showcase {
+  position: relative;
+  display: grid;
+  min-height: 720px;
+  place-items: center;
+  overflow: hidden;
+  border-block: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(56, 242, 179, 0.16), transparent 28%),
+    radial-gradient(circle at 70% 48%, rgba(56, 213, 255, 0.12), transparent 32%),
+    rgba(6, 8, 12, 0.68);
+}
+
+#threeCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.three-copy {
+  position: relative;
+  z-index: 2;
+  width: min(680px, calc(100% - 32px));
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  padding: clamp(22px, 4vw, 40px);
+  background: rgba(8, 10, 14, 0.58);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
+  text-align: center;
+  backdrop-filter: blur(16px);
+}
+
+.three-copy p:not(.eyebrow) {
+  color: #dce7f7;
+}
+
+.orbit-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.orbit-legend span {
+  border: 1px solid rgba(56, 242, 179, 0.32);
+  border-radius: 8px;
+  padding: 8px 11px;
+  color: #d7f8ff;
+  background: rgba(56, 242, 179, 0.08);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.three-fallback::after {
+  position: absolute;
+  inset: 8%;
+  content: "";
+  border: 1px solid rgba(56, 242, 179, 0.24);
+  border-radius: 999px;
+  animation: pulse 2.8s ease-out infinite;
+}
+
+.readme-lab {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.38fr) minmax(0, 1fr);
+  gap: clamp(18px, 3vw, 28px);
+  align-items: start;
+}
+
+.readme-lab > * {
+  margin-inline: 0;
+}
+
+.github-card,
+.readme-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px);
+}
+
+.github-card {
+  position: sticky;
+  top: 94px;
+  padding: 22px;
+}
+
+.github-card img {
+  width: min(190px, 70%);
+  aspect-ratio: 1;
+  margin-bottom: 18px;
+  border: 4px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.github-card h2 {
+  font-size: 1.55rem;
+}
+
+.github-card p {
+  color: #dce7f7;
+}
+
+.handle {
+  margin-top: 2px;
+  color: var(--muted);
+}
+
+.mini-links {
+  display: grid;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.mini-links a {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.07);
+  font-weight: 900;
+}
+
+.readme-panel {
+  overflow: hidden;
+  padding: clamp(20px, 3vw, 28px);
+}
+
+.readme-path {
+  color: #dce7f7;
+  font-family: "Cascadia Code", Consolas, monospace;
+  font-size: 0.86rem;
+}
+
+.animated-wave {
+  height: 92px;
+  margin: 20px 0 28px;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 78% 56%, 52% 68%, 25% 54%, 0 70%);
+  background:
+    linear-gradient(90deg, rgba(56, 242, 179, 0.16), rgba(56, 213, 255, 0.2), rgba(255, 190, 92, 0.16)),
+    repeating-linear-gradient(90deg, transparent 0 22px, rgba(255, 255, 255, 0.08) 22px 23px);
+  background-size: 220% 100%, auto;
+  animation: waveShift 7s ease-in-out infinite alternate;
+}
+
+.code-window {
+  overflow: hidden;
+  margin: 24px 0 28px;
+  border: 1px solid rgba(56, 213, 255, 0.24);
+  border-radius: 8px;
+  background: #010409;
+}
+
+.code-window pre {
+  margin: 0;
+  padding: 22px;
+  overflow-x: auto;
+  color: #f6f8fb;
+  font-family: "Cascadia Code", Consolas, monospace;
+  font-size: clamp(0.78rem, 1.4vw, 0.96rem);
+  line-height: 1.7;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 28px;
+}
+
+.skill-badges span {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #07100d;
+  background: linear-gradient(135deg, #38f2b3, #38d5ff);
+  box-shadow: 0 8px 28px rgba(56, 213, 255, 0.14);
+  font-weight: 950;
+  animation: badgeFloat 4.8s ease-in-out infinite;
+}
+
+.skill-badges span:nth-child(3n) {
+  background: linear-gradient(135deg, #ffbe5c, #ff6b8a);
+}
+
+.skill-badges span:nth-child(4n) {
+  background: linear-gradient(135deg, #9b8cff, #38d5ff);
+}
+
+.attention-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.attention-grid article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.attention-grid strong {
+  color: var(--mint);
+}
+
+.attention-grid p {
+  color: var(--muted);
+}
+
+@keyframes waveShift {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to {
+    background-position: 100% 0, 42px 0;
+  }
+}
+
+@keyframes badgeFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 980px) {
+  .readme-lab {
+    grid-template-columns: 1fr;
+  }
+
+  .github-card {
+    position: static;
+  }
+
+  .attention-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .three-showcase {
+    min-height: 720px;
+  }
+
+  .github-card img {
+    width: 150px;
+  }
+}
