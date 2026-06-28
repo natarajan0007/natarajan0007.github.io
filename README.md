@@ -1,6 +1,6 @@
 # Natarajan Muthu AI Portfolio Website
 
-This is a static AI-focused portfolio website ready for GitHub Pages.
+This is a cinematic AI Command Center / GitHub README hybrid portfolio ready for GitHub Pages.
 
 ## Free Hosting Recommendation
 
@@ -29,7 +29,7 @@ https://natarajan0007.github.io
 
 - `index.html` - the AI portfolio website.
 - `styles.css` - responsive styling.
-- `script.js` - terminal typing, canvas animation, counters, copy email and active navigation.
-- `three-scene.js` - Three.js AI orbit scene loaded from jsDelivr.
+- `script.js` - role typing, terminal line reveal, counters, tabs, hover cards and active navigation.
+- `three-scene.js` - lazy-loaded Three.js hero, pipeline and contact orbit scenes loaded from jsDelivr.
 
 The source PDF is intentionally not committed because it contains private contact details.
